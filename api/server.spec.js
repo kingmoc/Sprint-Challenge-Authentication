@@ -22,7 +22,7 @@ describe('server', () => {
         //         })
         // })
 
-        // it('Should Return Array', () => {
+        // it('Username should be {Name}', () => {
         //     return request(server).post('/api/auth/register')
         //         .send({
         //             username: "Sylvia",
@@ -36,17 +36,44 @@ describe('server', () => {
     })
 
     describe('POST /LOGIN', () => {
-        it('Should Return 201 Status', () => {
-            return request(server).post('/api/auth/register')
-                .send({
-                    username: "Ara",
-                    password: "pass"
-                })
-                .set('Content-Type', 'application/json')
-                .then(res => {
-                    expect(res.status).toBe(200)
-                })
+        // it('Should Return 200 Status', () => {
+        //     return request(server).post('/api/auth/login')
+        //         .send({
+        //             username: "Ara",
+        //             password: "pass"
+        //         })
+        //         .set('Content-Type', 'application/json')
+        //         .then(res => {
+        //             expect(res.status).toBe(200)
+        //         })
+        // })
+
+        // it('Username should be {Name}', () => {
+        //     return request(server).post('/api/auth/login')
+        //         .send({
+        //             username: "Ara",
+        //             password: "pass"
+        //         })
+        //         .set('Content-Type', 'application/json')
+        //         .then(res => {
+        //             expect(res.body.message).toBe('Welcome Ara!')
+        //         })
+        // })
     })
+
+    describe('GET /JOKES', () => {
+
+
+        
+    })
+
+
+
+
+
+
+
+
 
 
 })
